@@ -1,0 +1,28 @@
+body{
+  Background: rgb(38, 123, 97);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.card-size{
+  width: 500px;
+  height: 400px;
+}
+
+.size{
+  width: 100%;
+  height: 100%;
+}
+
+.bg__login{
+  background: rgb(82, 184, 146);
+}
+
+.wd__login{
+  width: 320px;
+  height: 100%;
+}
+
+.rd__login{
+  border-radius: 15px;
+}
