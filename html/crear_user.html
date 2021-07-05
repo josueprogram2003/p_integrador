@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
@@ -16,7 +16,7 @@
         <article
           class="col d-none d-md-flex align-items-center justify-content-center"
         >
-          <img class="w-100" src="./assets/img/login_ayuda_Adra.png" alt="" />
+          <img class="w-100" src="../assets/img/login_ayuda_Adra.png" alt="" />
         </article>
         <!-- Login 5 columnas -->
         <article
@@ -30,7 +30,7 @@
           <div class="w-75">
             <!-- Imagen del login -->
             <div class="d-flex justify-content-center img__login">
-              <img src="./assets/img/adra.png" alt="" />
+              <img src="../assets/img/adra.png" alt="" />
             </div>
             <!-- Formulario -->
             <form class="container-fluid color_adra pb-3 pd__top">
@@ -44,7 +44,22 @@
                 </div>
               </div>
               <!-- Campos -->
-              <div class="row pl-5 pr-5 mb-5">
+              <div class="row pl-5 pr-5">
+                <div class="col-12 input-group">
+                  <input
+                    type="text"
+                    class="
+                      form-control
+                      rounded-0
+                      color_adra
+                      border__b
+                      icon__gmail
+                    "
+                    placeholder="Gmail"
+                    aria-label="Gmail"
+                  />
+                </div>
+
                 <div class="col-12 input-group">
                   <input
                     type="text"
@@ -55,15 +70,12 @@
                       border__b
                       icon__user__login
                     "
-                    placeholder="Usuario"
-                    id="user"
-                    aria-label="Username"
+                    placeholder="Nombre de usuario"
                   />
                 </div>
-
-                <div class="col-12 input-group mb-4">
+                <div class="col-12 input-group">
                   <input
-                    type="password"
+                    type="text"
                     class="
                       form-control
                       rounded-0
@@ -71,55 +83,57 @@
                       border__b
                       icon__lock__login
                     "
-                    placeholder="password"
-                    id="pass"
+                    placeholder="Contraseña"
+                  />
+                </div>
+                <div class="col-12 input-group mb-3">
+                  <input
+                    type="text"
+                    class="
+                      form-control
+                      rounded-0
+                      color_adra
+                      border__b
+                      icon__lock__login
+                    "
+                    placeholder="Verificar Contraseña"
                   />
                 </div>
                 <!-- boton -->
                 <div class="col-12 mb-2 d-flex justify-content-center">
-                  <button
-                    class="btn bg_btn text-white w-75"
-                    id="btn_iniciar"
-                    type="submit"
-                  >
-                    Iniciar Sesión
+                  <button class="btn bg_btn text-white w-75">
+                    Registrarse
                   </button>
-                </div>
-
-                <div class="col-12 mb-2 text-center">
-                  <a class="text-white" href="./html/crear_user.html"
-                    >¿No tienes una cuenta? Creala aqui</a
-                  >
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row mt-5">
                 <div class="col-12 w-100 d-flex flex-row justify-content-end">
                   <div class="size__card mr-3">
                     <img
                       class="size__img"
-                      src="./assets/img/facebook.png"
+                      src="../assets/img/facebook.png"
                       alt=""
                     />
                   </div>
                   <div class="mr-3 size__card">
                     <img
                       class="size__img"
-                      src="./assets/img/youtube.png"
+                      src="../assets/img/youtube.png"
                       alt=""
                     />
                   </div>
                   <div class="size__card mr-3">
                     <img
                       class="size__img"
-                      src="./assets/img/email.png"
+                      src="../assets/img/email.png"
                       alt=""
                     />
                   </div>
                   <div class="size__card mr-3">
                     <img
                       class="size__img"
-                      src="./assets/img/instagram.png"
+                      src="../assets/img/instagram.png"
                       alt=""
                     />
                   </div>
@@ -133,6 +147,5 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/login.js"></script>
   </body>
 </html>
